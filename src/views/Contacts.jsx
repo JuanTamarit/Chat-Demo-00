@@ -18,8 +18,8 @@ function Contacts() {
   }, []);
 
   return (
-    <div className="contacts">
-      <h2>Chats</h2>
+    <div>
+      <h1>Lista de contactos</h1>
       {data.map((item) => (
         <Link to="/chat">
           <Contact img={item.img} name={item.name} icon={item.messages[0]} />
