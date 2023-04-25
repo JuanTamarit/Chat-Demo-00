@@ -14,7 +14,7 @@ function App() {
     <>
       <body className="app">
         <header>
-          <h1>My first Chat App with React</h1>
+          <h1>Myyy first Chat App with React</h1>
         </header>
         <main>
           <Routes>
