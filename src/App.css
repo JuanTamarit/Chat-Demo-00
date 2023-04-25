@@ -1,11 +1,27 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 70px;
+}
+
 header {
+  padding: 1rem;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background-color: lightpink;
+
 }
 
 html {
   --spacing: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

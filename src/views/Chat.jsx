@@ -1,5 +1,13 @@
+import Contact from "../components/Contact/Contact";
+import "./Chat.css";
+
 function Chat() {
-  return <h1>hola soy chats</h1>;
+  return (
+    <div className="chat">
+      <h1>Chat</h1>
+      <Contact>sds</Contact>
+    </div>
+  );
 }
 
 export default Chat;

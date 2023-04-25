@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import Contact from "../components/Contact/Contact";
+import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Contacts.css";
 
 function Contacts() {
   let [data, setData] = useState([]);
@@ -15,10 +18,12 @@ function Contacts() {
   }, []);
 
   return (
-    <div>
-      <h1>Lista de contactos</h1>
+    <div className="contacts">
+      <h2>Chats</h2>
       {data.map((item) => (
-        <Contact img={item.img} name={item.name} icon={item.messages[0]} />
+        <Link to="/chat">
+          <Contact img={item.img} name={item.name} icon={item.messages[0]} />
+        </Link>
       ))}
     </div>
   );
